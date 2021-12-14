@@ -10,6 +10,7 @@ import { PrismService } from './Prism.service';
 import { AppConfig } from './config';
 import { AppComponent } from './app.component';
 import { BuilderComponent } from './builder/builder.component';
+import { AppRoutingModule } from './app-routing.module';
 
 (Formio as any).icons = 'fontawesome';
 
@@ -23,7 +24,7 @@ import { BuilderComponent } from './builder/builder.component';
     BrowserModule,
     CommonModule,
     FormioModule,
-    RouterModule
+    AppRoutingModule
   ],
   providers: [
     PrismService,
