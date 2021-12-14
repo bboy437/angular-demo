@@ -1,4 +1,4 @@
-import { LanguageComponent } from './language/language.component';
+
 import { BuilderComponent } from './builder/builder.component';
 import { SimpleComponent } from './simple/simple.component';
 import { RendererComponent } from './renderer/renderer.component';
@@ -8,7 +8,7 @@ import {CustomBuilderComponent} from "./custom-builder/builder.component";
 export const FORMS: any = [
   {
     path: '',
-    redirectTo: 'renderer',
+    redirectTo: 'builder',
     pathMatch: 'full'
   },
   {
@@ -41,9 +41,5 @@ export const FORMS: any = [
     title: 'PDF Form',
     component: PdfComponent
   },
-  {
-    path: 'language',
-    title: 'Multi-Language',
-    component: LanguageComponent
-  }
+
 ];
